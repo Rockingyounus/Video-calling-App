@@ -1,0 +1,100 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background: hsl(194, 12%, 36%);
+  color: #fff;
+  padding: 120px 80px;
+  background-size: cover;
+
+  width: 8/12;
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  max-width: 1800px;
+  align-items: center;
+  
+ 
+   /* Space between text and image */
+  
+}
+
+.div-section {
+ background-size: cover;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+}
+
+.nav-bar{
+  background-color: #19384d;
+}
+.hero-image {
+  justify-items: end;
+  display: block;
+  margin-left: auto;
+  width: 100%; /* Set your desired width */
+  height: auto;
+
+}
+
+.h-text {
+  text-align: center;
+}
+
+/* MockInterviewCard.css */
+
+.mock-interview-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease;
+ 
+  
+
+  /* Add hover effect */
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+
+

@@ -110,36 +110,37 @@ const RoomPage = () => {
   ]);
 
   return (
-    <div>
-      <h1>Room Page</h1>
-      <h4>{remoteSocketId ? "Connected" : "No one in room"}</h4>
-      {myStream && <button onClick={sendStreams}>Send Stream</button>}
-      {remoteSocketId && <button onClick={handleCallUser}>CALL</button>}
-      {myStream && (
-        <>
-          <h1>My Stream</h1>
-          <ReactPlayer
-            playing
-            muted
-            height="100px"
-            width="200px"
-            url={myStream}
-          />
-        </>
-      )}
-      {remoteStream && (
-        <>
-          <h1>Remote Stream</h1>
-          <ReactPlayer
-            playing
-            muted
-            height="100px"
-            width="200px"
-            url={remoteStream}
-          />
-        </>
-      )}
-    </div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+  <h1>Room Page</h1>
+  <h4>{remoteSocketId ? "Connected" : "No one in room"}</h4>
+  {myStream && <button style={{ marginTop: '10px', padding: '8px 16px', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }} onClick={sendStreams}>Send Stream</button>}
+  {remoteSocketId && <button style={{ marginTop: '10px', padding: '8px 16px', backgroundColor: '#3498db', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }} onClick={handleCallUser}>CALL</button>}
+  {myStream && (
+    <>
+      <h1>My Stream</h1>
+      <ReactPlayer
+        playing
+        muted
+        height="100px"
+        width="200px"
+        url={myStream}
+      />
+    </>
+  )}
+  {remoteStream && (
+    <>
+      <h1>Remote Stream</h1>
+      <ReactPlayer
+        playing
+        muted
+        height="100px"
+        width="200px"
+        url={remoteStream}
+      />
+    </>
+  )}
+</div>
+
   );
 };
 

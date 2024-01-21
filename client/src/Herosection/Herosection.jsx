@@ -7,7 +7,7 @@ function Herosection() {
     <div>
     <div className="nav-bar">
     <h1 className="h-text"> MOCK INTERVIEW</h1>
-    <p>Explore amazing things and discover new experiences.</p>
+  
     </div>
 
     <div className="hero-section">
